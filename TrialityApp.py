@@ -590,12 +590,14 @@ if 'xfi' in st.session_state:
     Xi,Fi,JEi = st.session_state['xfi']
     with col1:
         generate_graph(Xi,Fi)
-        st.write(JEi)
+        with st.expander('Input',expanded=False):
+            st.write(JEi)
     if 'xfn' in st.session_state:
         Xn,Fn,JEn = st.session_state['xfn']
         with col2:
             generate_graph(Xn,Fn)
-            st.write(JEn)
+            with st.expander('Output',expanded=False):
+                st.write(JEn)
 
 JEterms = st.text_area('JEterms')
 node = st.text_input('Node')
