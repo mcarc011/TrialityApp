@@ -592,7 +592,7 @@ to copy the example input
 2. Paste it into the JE terms text area
 
 3. Specify which node to dualize in the node text area. You can put a minus
-sign to perform inverse Triality (i.e 1 or -1 in the node)
+sign to perform inverse Triality (i.e 1 or -1 in the node text area)
 
 4. Hit the Triality button and give the app a second and then hit it again
 to show the new quiver and JE terms underneath the new output dropdown.
