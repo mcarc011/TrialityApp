@@ -581,19 +581,21 @@ example = '''{'X31': ['+A12,X23', '-C12,Y23', '+P36,X64,P41', '-Q36,X64,Q41'],
 
 st.markdown('# Triality Calculator #')
 with st.expander('Instructions',expanded=False):
-    st.markdown(''' This calculator takes in the superpotential. The input should be in
-                the format the example below in. To run the example:
+    st.markdown(''' This calculator takes in a superpotential and performs triality
+on it. The input should be in the format the example below is in. 
 
-                1. Copy the dictionary by clicking input and then the clipboard button
-                to copy the example input
+To run the example:
 
-                2. Paste it into the JE terms text area
+1. Copy the dictionary by clicking input and then the clipboard button
+to copy the example input
 
-                3. Specify which node to dualize in the node text area. You can put a minus
-                sign to perform inverse Triality
+2. Paste it into the JE terms text area
 
-                4. Hit the Triality button and give the app a second and then hit it again
-                to show the new quiver and JE terms underneath the new output dropdown.
+3. Specify which node to dualize in the node text area. You can put a minus
+sign to perform inverse Triality
+
+4. Hit the Triality button and give the app a second and then hit it again
+to show the new quiver and JE terms underneath the new output dropdown.
 
     ''')
 col1,col2 = st.columns(2)
