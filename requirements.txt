@@ -1,6 +1,5 @@
 numpy
 streamlit
 matplotlib
-Time
 time
 git+https://github.com/networkx/networkx
