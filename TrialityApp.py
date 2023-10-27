@@ -579,6 +579,23 @@ example = '''{'X31': ['+A12,X23', '-C12,Y23', '+P36,X64,P41', '-Q36,X64,Q41'],
   'Q45': ['+Y56,Y64', '-X56,Z64', '+Q41,B12,Q25', '-P41,B12,P25'],
   'R45': ['+Z56,Z64', '-Y56,X64', '+Q41,C12,Q25', '-P41,C12,P25']}'''
 
+st.markdown('# Triality Calculator #')
+with st.expander('Instructions',expanded=False):
+    st.markdown(''' This calculator takes in the superpotential. The input should be in
+                the format the example below in. To run the example:
+
+                1. Copy the dictionary by clicking input and then the clipboard button
+                to copy the example input
+
+                2. Paste it into the JE terms text area
+
+                3. Specify which node to dualize in the node text area. You can put a minus
+                sign to perform inverse Triality
+
+                4. Hit the Triality button and give the app a second and then hit it again
+                to show the new quiver and JE terms underneath the new output dropdown.
+
+    ''')
 col1,col2 = st.columns(2)
 
 if 'xfi' not in st.session_state:
@@ -599,7 +616,7 @@ if 'xfi' in st.session_state:
             with st.expander('Output',expanded=False):
                 st.write(JEn)
 
-JEterms = st.text_area('JEterms')
+JEterms = st.text_area('JE terms')
 node = st.text_input('Node')
 tbutton= st.button('Triality')
 
